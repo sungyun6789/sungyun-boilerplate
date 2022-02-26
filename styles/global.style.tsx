@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { css, Global } from '@emotion/react';
 
-const GlobalStyle = createGlobalStyle`
+const globalStyle = css`
   html,
   body,
   div,
@@ -125,5 +125,7 @@ const GlobalStyle = createGlobalStyle`
     border-spacing: 0;
   }
 `;
+
+const GlobalStyle = () => <Global styles={globalStyle} />;
 
 export default GlobalStyle;
