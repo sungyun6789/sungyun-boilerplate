@@ -6,7 +6,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install && chmod ug+x .husky/*"
   },
   "dependencies": {
     "@emotion/react": "^11.8.1",
@@ -30,6 +31,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.2",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
     "prettier": "^2.5.1",
     "typescript": "^4.5.5"
   }
